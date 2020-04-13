@@ -1,0 +1,84 @@
+.contact {
+  height: 100vh;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($color-secondary, 0.8),
+    rgba($color-secondary-dark, 0.8)
+  );
+  background-size: cover;
+  background-position: top;
+  position: relative;
+
+  clip-path: polygon(0% 0%, 90% 0, 100% 50%, 90% 100%, 0% 100%);
+
+  @include respond(tab-port) {
+    clip-path: none;
+  }
+
+  &__heading {
+    text-align: center;
+    font-size: $heading-font-size;
+    color: $color-primary;
+    padding-top: 5rem;
+  }
+  &__image {
+    position: absolute;
+    top: 20rem;
+    right: 25%;
+
+    @include respond(tab-port) {
+      top: 40rem;
+      right: 0%;
+    }
+
+    &--map {
+      border: 1rem solid $color-primary;
+      width: 100%;
+      transform: scale(0.8);
+    }
+  }
+  &__info {
+    width: 20%;
+    position: absolute;
+    top: 25rem;
+    right: 10rem;
+    font-size: $default-font-size;
+    text-align: center;
+    line-height: 3.5rem;
+    list-style: none;
+    transform: translateY(4.5rem);
+
+    @include respond(tab-port) {
+      width: 100%;
+      top: 20rem;
+      right: 0%;
+      font-size: $sub-heading-font-size;
+      line-height: 4rem;
+    }
+
+    @include respond(phone) {
+      margin-top: 2rem;
+      top: 10rem;
+      right: auto;
+    }
+    &--phone {
+    }
+
+    &--email {
+    }
+
+    &--hours {
+      list-style: none;
+      padding: 1rem;
+      &-1 {
+      }
+      &-2 {
+      }
+      &-3 {
+      }
+    }
+
+    &--address {
+    }
+  }
+}

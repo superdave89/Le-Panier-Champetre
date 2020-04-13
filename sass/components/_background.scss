@@ -1,0 +1,43 @@
+.basket {
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-secondary, 0.8),
+      rgba($color-secondary-dark, 0.8)
+    ),
+    url("../../img/Interior-1.jpeg");
+  margin-bottom: 0;
+
+  @include respond(tab-port) {
+    min-width: 90vw;
+  }
+
+  &--bg-fixed {
+    min-height: 100vh;
+    background-attachment: fixed;
+  }
+
+  &__info {
+    padding: 3rem;
+    text-align: center;
+    margin: 10rem auto;
+    color: $color-primary;
+  }
+
+  &__heading {
+    font-size: $heading-font-size;
+  }
+
+  &__pictures {
+    margin-top: 10rem;
+  }
+
+  &__btn {
+    width: 20rem;
+  }
+}

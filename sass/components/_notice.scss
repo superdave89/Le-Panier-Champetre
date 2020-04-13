@@ -1,0 +1,23 @@
+.notice {
+  display: flex;
+  justify-content: center;
+  width: 70vw;
+  text-align: center;
+  margin: 0 auto;
+  border: 0.3rem solid $color-primary;
+
+  &__content {
+    font-size: $default-font-size;
+
+    &--eng {
+      padding: 0.5rem;
+    }
+    &--frn {
+      padding: 0.5rem;
+    }
+  }
+
+  &__line {
+    border: 0.1rem solid $color-primary;
+  }
+}

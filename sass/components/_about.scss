@@ -1,0 +1,32 @@
+.about {
+  margin-top: 4rem;
+  display: inline-flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+
+  &__heading {
+    font-size: $heading-font-size;
+    color: $color-primary;
+    padding: 4rem;
+    text-align: center;
+  }
+
+  &__image {
+    border: 1px solid $color-black;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    align-self: center;
+    padding: 2rem;
+    width: 50%;
+  }
+
+  &__content {
+    padding: 3rem;
+    align-self: center;
+    font-size: 2rem;
+    width: 80%;
+    text-align: center;
+  }
+}

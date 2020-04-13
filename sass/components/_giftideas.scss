@@ -1,0 +1,80 @@
+.gift-ideas {
+  max-width: 150rem;
+  background-color: $color-background-grey;
+  margin: 0 auto;
+
+  grid-row: center-start / center-end;
+
+  padding: 15rem 15rem;
+
+  margin: 1 10 0 15rem;
+
+  @supports (display: grid) {
+    display: grid;
+    //grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 6rem;
+    align-items: start;
+  }
+
+  &__header {
+    margin-top: 10rem;
+    margin-bottom: 0;
+    font-size: $heading-font-size;
+    color: $color-primary;
+    text-align: center;
+  }
+
+  &__box {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  }
+}
+
+.gift-idea,
+.gift-idea a {
+  float: left;
+  width: 33.3333%;
+  margin-bottom: 6rem;
+  grid-template-columns: repeat(auto-fit, 1fr);
+  display: grid;
+  grid-row-gap: 1.5rem;
+  grid-column-gap: 2.5rem;
+  padding: 2rem;
+
+  @supports (display: grid) {
+    width: auto;
+    margin-bottom: 0;
+  }
+
+  @include respond(phone) {
+    align-self: center;
+  }
+
+  &__icon {
+    color: $color-primary;
+    font-size: 7.5rem;
+    grid-row: 1 / span 1;
+    transform: translateY(-1rem);
+    margin: 0 auto;
+  }
+
+  &__text {
+    font-size: 1.5rem;
+    text-align: center;
+    color: $color-primary;
+    text-decoration: none;
+  }
+
+  &__heading {
+    color: $color-primary;
+    font-size: $sub-heading-font-size;
+    text-align: center;
+    padding: 0.5rem;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
