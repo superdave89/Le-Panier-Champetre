@@ -12,6 +12,12 @@
     align-items: center;
   }
 
+  &__content {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+  }
+
   &__img {
     padding: 1rem;
     max-width: 50%;
@@ -20,13 +26,30 @@
     -moz-box-shadow: 8px 9px 12px -5px rgba(0, 0, 0, 0.75);
     box-shadow: 8px 9px 12px -5px rgba(0, 0, 0, 0.75);
     margin: 2rem;
+
+    @include respond(phone) {
+      scale: 2;
+      padding: 0.5rem;
+    }
   }
 
-  &__content {
+  &__header {
     margin: auto 2rem;
-    text-align: center;
+    color: $color-primary;
+    font-size: $heading-font-size;
+
+    @include respond(tab-port) {
+      text-align: center;
+      padding-top: 10rem;
+    }
+  }
+
+  &__paragraph {
+    margin: auto 2rem;
+    // text-align: center;
     font-size: $default-font-size;
     color: $color-primary;
-    max-width: 50%;
+    width: 100%;
+    font-family: sans-serif;
   }
 }

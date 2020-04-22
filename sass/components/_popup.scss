@@ -97,6 +97,10 @@
       line-height: 1;
     }
 
+    @include respond(phone) {
+      scale: 2;
+    }
+
     &:hover {
       color: $color-secondary-dark;
     }

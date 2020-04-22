@@ -18,6 +18,10 @@
       box-shadow: 0 1.5rem 3rem rgba($color-black, 0.2);
     }
 
+    @include respond(phone) {
+      display: none;
+    }
+
     &--p1 {
       left: 0;
       top: -2rem;
@@ -61,5 +65,4 @@
   &:hover &__photo:not(:hover) {
     transform: scale(0.95);
   }
-  //composition:hover composition__photo:not(:hover) {
 }

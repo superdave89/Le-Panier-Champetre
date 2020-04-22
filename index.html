@@ -13,29 +13,21 @@
 
     <title>Le Panier</title>
   </head>
-
-  <body class="container">
+  <body>
     <header>
-      
-      <div class="navigation">
-        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-
-        <label for="navi-toggle" class="navigation__button">
-            <span class="navigation__icon">&nbsp;</span>
-        </label>
-
-        <div class="navigation__background">&nbsp;</div>
-
-        <nav class="navigation__nav">
-            <ul class="navigation__list">
-                <li class="navigation__item"><a href="index.html" class="navigation__link">Home</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">Gift Ideas</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">About</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">Contact</a></li>
-                <li class="navigation__item"><a href="baskets.html" class="navigation__link">Baskets</a></li>
-                </ul>
-        </nav>
-    </div>
+      <h1 class="logo">Logo</h1>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+      </label>
     </header>
 
     <div class="notice">
@@ -43,7 +35,7 @@
         <strong>ATTENTION!</strong>
         <br/>
         In accordance with the regulations set by Premier Legault on March 23rd 2020, we are now closed to in-store business.
-        If you would like to make a order, we will deliver for free in the Town of Brome Lake. Or we can mail or arange for a pick up of your order.
+        If you would like to make a order, we will deliver for free in the Town of Brome Lake. Or we can mail or arrange for a pick up of your order.
         Contact us by email at lepanier@bellnet.ca or call us 450-242-2758.
         We wish everyone well in our community and beyond and hope to welcome you back into the store soon.
         In the meantime keep an eye on our Facebook page for special deals! 
@@ -69,12 +61,11 @@
     </div>
     <div class="pitch">
       <img src="img/Hero.jpeg" alt="hero" class="pitch__img" />
-      <p class="pitch__content">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt iste
-        repudiandae consectetur repellendus a! Unde quasi molestiae
-        reprehenderit debitis expedita, tenetur esse. Accusantium atque eveniet
-        veniam doloremque nesciunt quis doloribus.
-      </p>
+      <div class="pitch__content"><h2 class="pitch__header">Elegant and Affordable</h2>
+      <p class="pitch__paragraph">
+        We arrange and assemble quality gift baskets by hand. Each basket is designed to your specifications. We work with you to make you happy. Great for any occasion!
+      </p></div>
+      
     </div>
 
     <section class="basket basket--bg-fixed row">
@@ -82,7 +73,7 @@
         <h3 class="heading-tertiary u-margin-bottom-small basket__heading">
           You're going to fall in love with our baskets!
         </h3>
-        <p class="paragraph basket__content">
+        <p class="basket__content">
           All of our baskets are assmebled with care and diligence. Customize
           the contents of your basket to reflect the occasion or season! All
           sizes and prices available!
@@ -128,8 +119,7 @@
           <i class="fas fa-palette gift-idea__icon"></i>
           <a href="#popup__local-art"><h4 class="gift-idea__heading">Local Art</h4></a>
           <p class="gift-idea__text">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-            distinctio necessitatibus pariatur voluptatibus.
+            Admire the local culture with art by local artists. Get a taste of the countryside. 
           </p>
         
         </div>
@@ -138,67 +128,87 @@
           <i class="fas fa-cheese gift-idea__icon"></i>
           <a href="#popup__gourmet-foods"><h4 class="gift-idea__heading">Gourmet Foods</h4></a>
           <p class="gift-idea__text">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-            distinctio necessitatibus pariatur voluptatibus.
+            Treat yourself or others with gourmet foods including jams, spices and snacks.
           </p>
         </div>
         <div class="gift-idea">
           <i class="fas fa-hand-holding-water gift-idea__icon"></i>
           <a href="#popup__bath-and-oils"><h4 class="gift-idea__heading">Bath and Oils</h4></a>
           <p class="gift-idea__text">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-            distinctio necessitatibus pariatur voluptatibus.
+            Our selection of bath soaps and oils will help you relax.
           </p>
         </div>
         <div class="gift-idea">
           <i class="fas fa-calendar-alt gift-idea__icon"></i>
           <a href="#popup__seasonal"><h4 class="gift-idea__heading">Seasonal</h4></a>
           <p class="gift-idea__text">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-            distinctio necessitatibus pariatur voluptatibus.
+            Keep an eye on our changing seasonal stock. Perfect gifts for any time of the year.
           </p>
         </div>
         <div class="gift-idea">
           <i class="fas fa-gifts gift-idea__icon"></i>
           <a href="#popup__one-of-a-kind"><h4 class="gift-idea__heading">One of a Kind Items</h4></a>
           <p class="gift-idea__text">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-            distinctio necessitatibus pariatur voluptatibus.
+            Browse our collection of one of a kind items. Unique knick knacks and gifts. 
           </p>
         </div>
         <div class="gift-idea">
           <i class="far fa-gem gift-idea__icon"></i>
           <a href="#popup__jewelry"><h4 class="gift-idea__heading">Hand-made Jewelry</h4></a>
           <p class="gift-idea__text">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-            distinctio necessitatibus pariatur voluptatibus.
+            Beautiful jewelry made entirely by hand. 
           </p>
         </div>
-        <div class="gift-idea">
+        <!-- <div class="gift-idea">
           <i class="fas fa-holly-berry gift-idea__icon"></i>
           <a href="#popup__christmas"><h4 class="gift-idea__heading">Christmas</h4></a>
           <p class="gift-idea__text">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur
             distinctio necessitatibus pariatur voluptatibus.
           </p>
-        </div>
+        </div> -->
         <div class="gift-idea">
           <i class="fas fa-child gift-idea__icon"></i>
           <a href="#popup__kids-corner"><h4 class="gift-idea__heading">Kid's Corner</h4></a>
           <p class="gift-idea__text">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-            distinctio necessitatibus pariatur voluptatibus.
+            Bring the kids to see our colourful kid's corner! 
           </p>
         </div>
         <div class="gift-idea">
           <i class="fas fa-candy-cane gift-idea__icon"></i>
           <a href="#popup__fudge-candy"><h4 class="gift-idea__heading">Fudge and Candy</h4></a>
           <p class="gift-idea__text">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-            distinctio necessitatibus pariatur voluptatibus.
+            Stop in for a free piece of fudge and browse our other sweets and treats. 
           </p>
         </div>
       </section>
+    </section>
+    <section class="gift_baskets">
+      <h2 class="gift_baskets__heading">
+        Gift Baskets
+      </h2>
+      <p class="gift_baskets__paragraph">Browse our gift basket options. We have a selection to match every budget and every occasion!</p>
+      <div class="gift_baskets__cards">
+        <div class="gift_baskets__card">
+          <img class="gift_baskets__card-image"/>
+          <p class="gift_baskets__card-paragraph"></p>
+        </div><div class="gift_baskets__card">
+          <img class="gift_baskets__card-image"/>
+          <p class="gift_baskets__card-paragraph"></p>
+        </div><div class="gift_baskets__card">
+          <img class="gift_baskets__card-image"/>
+          <p class="gift_baskets__card-paragraph"></p>
+        </div><div class="gift_baskets__card">
+          <img class="gift_baskets__card-image"/>
+          <p class="gift_baskets__card-paragraph"></p>
+        </div><div class="gift_baskets__card">
+          <img class="gift_baskets__card-image"/>
+          <p class="gift_baskets__card-paragraph"></p>
+        </div><div class="gift_baskets__card">
+          <img class="gift_baskets__card-image"/>
+          <p class="gift_baskets__card-paragraph"></p>
+        </div>
+      </div>
     </section>
     
     <section class="contact">
@@ -215,7 +225,7 @@
         <li class="contact__info--phone"><span>Phone:</span> 450-242-2758</li>
         <li class="contact__info--email"><span>Email:</span> lepanier@bellnet.ca</li>
         <ul class="contact__info--hours">
-          <li class="contact__info--hours-1">Due to COVID-19 our gift shop is closed until further notice.</li>
+          <li class="contact__info--hours-1">Due to COVID-19 our gift shop is closed to the public until further notice. However, we are still taking orders Mon-Fri from 10 am - 2pm </li>
           <!-- <li class="contact__info--hours-2">Jun-Dec: 10 am - 6 pm</li>
           <li class="contact__info--hours-3">Jan - May: 10 am - 5pm</li> -->
         </ul>
@@ -225,8 +235,8 @@
 
     <section class="about">
       <h3 class="about__heading">About Us</h3>
-      <img src="img/Hero.jpeg" alt="Anette & Patti" class="about__image"/>
-      <p class="about__content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni, quam! Nostrum, facilis sint inventore harum molestiae iure ducimus repudiandae nihil deleniti et doloremque nisi ipsum? Laborum officia quibusdam temporibus incidunt ab blanditiis voluptate tempore, hic quis impedit quo consequuntur deleniti unde eius ipsa repellendus! Consectetur nobis necessitatibus voluptas corporis expedita ullam exercitationem porro recusandae id? Aperiam quo saepe ipsam pariatur delectus unde, provident, quis sed rerum cupiditate incidunt impedit vitae?</p>
+      <img src="img/Patti_Annette.jpeg" alt="Anette & Patti" class="about__image"/>
+      <p class="about__content">Le Panier Champetre is owned and operated by Annette Blanco and Patti Larose-Mason. We are passionate about bringing the joy of gift giving to our clients. </p>
     </section>
 
     <footer class="footer">

@@ -1,0 +1,39 @@
+.gift_baskets {
+  display: flex;
+  flex-direction: column;
+  background-color: $color-primary;
+  justify-content: center;
+  height: 100vh;
+
+  &__heading {
+    font-size: $heading-font-size;
+    color: $color-secondary;
+    text-align: center;
+  }
+
+  &__paragraph {
+    text-align: center;
+    color: $color-secondary;
+    font-size: $default-font-size;
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: $color-secondary;
+  }
+
+  &__card {
+    max-width: 30%;
+    &-image {
+      width: 100%;
+    }
+
+    &-paragraph {
+      width: 100%;
+      color: $color-primary;
+      text-align: center;
+    }
+  }
+}

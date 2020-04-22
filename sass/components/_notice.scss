@@ -3,7 +3,7 @@
   justify-content: center;
   width: 70vw;
   text-align: center;
-  margin: 0 auto;
+  margin: 10% auto;
   border: 0.3rem solid $color-primary;
 
   &__content {
@@ -11,9 +11,27 @@
 
     &--eng {
       padding: 0.5rem;
+      width: 50%;
     }
     &--frn {
       padding: 0.5rem;
+      width: 50%;
+    }
+  }
+
+  @media only screen and (max-width: 37.5em) {
+    flex-direction: column;
+
+    &__content {
+      width: 100%;
+      &--eng {
+        padding: 0.5rem;
+        width: 100%;
+      }
+      &--frn {
+        padding: 0.5rem;
+        width: 100%;
+      }
     }
   }
 

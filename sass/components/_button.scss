@@ -16,6 +16,10 @@
     //changefor the <button> element
     border: none;
     cursor: pointer;
+
+    @include respond(phone) {
+      width: 100%;
+    }
   }
 
   &:hover {

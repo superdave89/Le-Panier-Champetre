@@ -20,6 +20,12 @@
     align-self: center;
     padding: 2rem;
     width: 50%;
+
+    @include respond(phone) {
+      padding: 0.5rem;
+      scale: 1.5;
+      margin-bottom: 1.5rem;
+    }
   }
 
   &__content {
@@ -28,5 +34,11 @@
     font-size: 2rem;
     width: 80%;
     text-align: center;
+    color: $color-primary;
+    font-family: sans-serif;
+
+    @include respond(phone) {
+      padding: 5rem;
+    }
   }
 }

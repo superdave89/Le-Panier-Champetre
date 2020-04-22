@@ -33,11 +33,19 @@
     font-size: $heading-font-size;
   }
 
+  &__content {
+    font-family: sans-serif;
+  }
+
   &__pictures {
     margin-top: 10rem;
   }
 
   &__btn {
     width: 20rem;
+
+    @include respond(phone) {
+      width: 100%;
+    }
   }
 }
