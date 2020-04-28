@@ -15,21 +15,24 @@
   </head>
   <body>
     <header>
-      <h1 class="logo">Logo</h1>
+      <h1 class="logo">Le Panier Champ&#234tre</h1>
       <input type="checkbox" id="nav-toggle" class="nav-toggle">
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#gift-baskets">Baskets</a></li>
+          <li><a href="/gallery.html">Gallery</a></li>
+          <li><a href="#gift-ideas">Gift Ideas</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="home-french.html">Fran&#231ais</a></li>
         </ul>
       </nav>
       <label for="nav-toggle" class="nav-toggle-label">
         <span></span>
       </label>
     </header>
-
+    <a name="home"></a>
     <div class="notice">
       <p class="notice__content--eng">
         <strong>ATTENTION!</strong>
@@ -52,7 +55,8 @@
     </div>
     
     <div class="hero">
-      <h1 class="hero__header">Le Panier Champetre</h1>
+      
+      <h1 class="hero__header">Le Panier Champ&#234tre</h1>
       <hr class="hero__break" />
       <h3 class="hero__sub">Gift giving made easy!</h3>
       <form class="hero__button" method="get" action="#gift-ideas">
@@ -68,51 +72,23 @@
       
     </div>
 
-    <section class="basket basket--bg-fixed row">
-      <div class="col-1-of-2 basket__info">
-        <h3 class="heading-tertiary u-margin-bottom-small basket__heading">
+    <section class="parallax parallax--bg-fixed">
+      <div class="parallax__info">
+        <h3 class="heading-tertiary u-margin-bottom-small parallax__heading">
           You're going to fall in love with our baskets!
         </h3>
-        <p class="basket__content">
+        <p class="parallax__content">
           All of our baskets are assmebled with care and diligence. Customize
           the contents of your basket to reflect the occasion or season! All
           sizes and prices available!
         </p>
 
-        <form class="basket__button" method="get" action="#basket-info">
-          <button href="#" class="btn basket__btn">Learn more &rarr;</button>
-        </form>
+        <a href="#gift-baskets" class="parallax__button"><button class="btn parallax__btn">Learn more &rarr;</button></a>
         
-      </div>
-      <div class="col-1-of-2 basket__pictures">
-        <div class="composition">
-          <img
-            srcset="img/GiftBasket-1.jpeg"
-            sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
-            alt="Photo 1"
-            class="composition__photo composition__photo--p1"
-            src="img/GiftBasket-1.jpeg"
-          />
-
-          <img
-            srcset="img/GiftBasket-2.jpeg"
-            sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
-            alt="Photo 2"
-            class="composition__photo composition__photo--p2"
-            src="img/GiftBasket-2.jpeg"
-          />
-
-          <img
-            srcset="img/GiftBasket-3.jpeg"
-            sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
-            alt="Photo 3"
-            class="composition__photo composition__photo--p3"
-            src="img/GiftBasket-2.jpeg"
-          />
-        </div>
       </div>
     </section>
     <section class="gift-ideas" id="gift-ideas"> 
+      <a name="gift-ideas"></a>
       <h3 class="gift-ideas__header">Browse our gift ideas</h3>
       <section class="gift-ideas__box">
         <div class="gift-idea">
@@ -175,7 +151,7 @@
           </p>
         </div>
         <div class="gift-idea">
-          <i class="fas fa-candy-cane gift-idea__icon"></i>
+          <i class="fas fa-cookie-bite gift-idea__icon"></i>
           <a href="#popup__fudge-candy"><h4 class="gift-idea__heading">Fudge and Candy</h4></a>
           <p class="gift-idea__text">
             Stop in for a free piece of fudge and browse our other sweets and treats. 
@@ -184,34 +160,50 @@
       </section>
     </section>
     <section class="gift_baskets">
+      <a name="gift-baskets"></a>
       <h2 class="gift_baskets__heading">
         Gift Baskets
-      </h2>
+      </h2>        
       <p class="gift_baskets__paragraph">Browse our gift basket options. We have a selection to match every budget and every occasion!</p>
-      <div class="gift_baskets__cards">
+
+      <div class="gift_baskets__cards">  
+
+        
         <div class="gift_baskets__card">
-          <img class="gift_baskets__card-image"/>
-          <p class="gift_baskets__card-paragraph"></p>
-        </div><div class="gift_baskets__card">
-          <img class="gift_baskets__card-image"/>
-          <p class="gift_baskets__card-paragraph"></p>
-        </div><div class="gift_baskets__card">
-          <img class="gift_baskets__card-image"/>
-          <p class="gift_baskets__card-paragraph"></p>
-        </div><div class="gift_baskets__card">
-          <img class="gift_baskets__card-image"/>
-          <p class="gift_baskets__card-paragraph"></p>
-        </div><div class="gift_baskets__card">
-          <img class="gift_baskets__card-image"/>
-          <p class="gift_baskets__card-paragraph"></p>
-        </div><div class="gift_baskets__card">
-          <img class="gift_baskets__card-image"/>
-          <p class="gift_baskets__card-paragraph"></p>
+          <h3 class="gift_baskets__card-title">Basket</h3>
+          <img class="gift_baskets__card-image" src="./img/GiftBasket-2.jpeg"/>
+          <p class="gift_baskets__card-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, veniam nulla amet enim nam autem.</p>
+          <p class="gift_baskets__card-price">$35-45</p>
+        </div>
+        <div class="gift_baskets__card">
+          <h3 class="gift_baskets__card-title">Basket</h3>
+          <img class="gift_baskets__card-image"src="./img/GiftBasket-3.jpeg"/>
+          <p class="gift_baskets__card-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, veniam nulla amet enim nam autem.</p>
+          <p class="gift_baskets__card-price">$35-45</p>
+        </div>
+        <div class="gift_baskets__card">
+          <h3 class="gift_baskets__card-title">Basket</h3>
+          <img class="gift_baskets__card-image" src="./img/GiftBasket4.jpeg"/>
+          <p class="gift_baskets__card-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, veniam nulla amet enim nam autem.</p>
+          <p class="gift_baskets__card-price">$35-45</p>
+        </div>
+        <div class="gift_baskets__card">
+          <h3 class="gift_baskets__card-title">Basket</h3>
+          <img class="gift_baskets__card-image"src="./img/GiftBasket7.jpeg"/>
+          <p class="gift_baskets__card-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, veniam nulla amet enim nam autem.</p>
+          <p class="gift_baskets__card-price">$35-45</p>
+        </div>
+        <div class="gift_baskets__card">
+          <h3 class="gift_baskets__card-title">Basket</h3>
+          <img class="gift_baskets__card-image"src="./img/GiftBasket6.jpeg"/>
+          <p class="gift_baskets__card-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, veniam nulla amet enim nam autem.</p>
+          <p class="gift_baskets__card-price">$35-45</p>
         </div>
       </div>
     </section>
     
     <section class="contact">
+      <a name="contact"></a>
       <h4 class="contact__heading">Contact Us!</h4>
 
       <a
@@ -220,32 +212,39 @@
       >
         <img src="img/GoogleMap.png" class="contact__image--map" />
       </a>
-
-      <ul class="contact__info">
+      <div class="contact__info">
+        <ul>
         <li class="contact__info--phone"><span>Phone:</span> 450-242-2758</li>
         <li class="contact__info--email"><span>Email:</span> lepanier@bellnet.ca</li>
         <ul class="contact__info--hours">
-          <li class="contact__info--hours-1">Due to COVID-19 our gift shop is closed to the public until further notice. However, we are still taking orders Mon-Fri from 10 am - 2pm </li>
+          <li class="contact__info--hours-1">Due to COVID-19 our gift shop is closed to the public until further notice. However, we are still taking orders Mon-Fri from 10 am - 2pm. We can arrange curbside pickup or local delivery. </li>
           <!-- <li class="contact__info--hours-2">Jun-Dec: 10 am - 6 pm</li>
           <li class="contact__info--hours-3">Jan - May: 10 am - 5pm</li> -->
         </ul>
         </li>
       </ul>
+      <a class="contact__info--facebook" href="https://www.facebook.com/LePanierChampetre"><i class="fab fa-facebook-square contact__info--icon"></i><p>Visit us on facebook to see our monthly deals!</p></a>
+    </div>
+      
+      
     </section>
 
     <section class="about">
+      <a name="about"></a>
       <h3 class="about__heading">About Us</h3>
       <img src="img/Patti_Annette.jpeg" alt="Anette & Patti" class="about__image"/>
-      <p class="about__content">Le Panier Champetre is owned and operated by Annette Blanco and Patti Larose-Mason. We are passionate about bringing the joy of gift giving to our clients. </p>
+      <p class="about__content">Le Panier Champ&#234tre is owned and operated by Annette Blanco and Patti Larose-Mason. We are passionate about bringing the joy of gift giving to our clients. Le Panier Champ&#234tre has been creating customized gift baskets for corporate and personal occasions since 2004. Desgined with classic style, each gift basket is put together carefully with attention to every detail. Product selection and presentation are a main focus for us in creating a gift basket that is just right for you. </p>
     </section>
 
     <footer class="footer">
       <ul class="footer__menu">
-        <li class="footer__menu--item"><a>Home</a></li>
-        <li class="footer__menu--item"><a>Gift Ideas</a></li>
-        <li class="footer__menu--item"><a>About</a></li>
-        <li class="footer__menu--item"><a>Contact</a></li>
-        <li class="footer__menu--item"><a>Baskets</a></li>
+        <li class="footer__menu--item"><a href="/" target="home">Home</a></li>
+        <li class="footer__menu--item"><a href="#about" target="about">About</a></li>
+        <li class="footer__menu--item"><a href="#gift-baskets" target="gift-baskets">Baskets</a></li>
+        <li class="footer__menu--item"><a href="gallery.html" target="gallery">Gallery</a></li>
+        <li class="footer__menu--item"><a href="#gift-ideas" target="gift-ideas">Gift Ideas</a></li>
+        <li class="footer__menu--item"><a href="#contact" target="contact">Contact</a></li>
+        <li class="footer__menu--item--lang"><a href="home-french.html" target="contact">Fran&#231ais</a></li>
       </ul>
 
       <p class="footer__content">Copyright &copy;2020 by David Mason.</p>

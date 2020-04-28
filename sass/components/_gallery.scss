@@ -1,0 +1,60 @@
+.gallery {
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+
+  &__heading {
+    color: $color-primary;
+    font-size: $heading-font-size;
+    text-align: center;
+    width: 100%;
+    padding: 4rem 2rem;
+  }
+
+  &__subheading {
+    color: $color-primary;
+    font-size: $sub-heading-font-size;
+    text-align: center;
+    width: 90%;
+    margin: 2rem auto;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 80vw;
+    border: 1px solid $color-grey-dark;
+    border-radius: 10px;
+    margin: 4rem auto;
+    background-color: $color-grey-light;
+  }
+
+  &__image {
+    height: 25rem;
+    width: 25rem;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem;
+    border: 1px solid $color-primary;
+    margin: 2rem;
+    border-radius: 10px;
+    transition: all 0.2s;
+
+    @include respond(phone) {
+      width: 100%;
+    }
+
+    &:hover {
+      scale: (2);
+
+      @include respond(phone) {
+        scale: (1.2);
+      }
+    }
+  }
+}

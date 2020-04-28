@@ -51,5 +51,10 @@
     color: $color-primary;
     width: 100%;
     font-family: sans-serif;
+
+    @include respond(tab-port) {
+      width: 70%;
+      margin: 1rem auto;
+    }
   }
 }

@@ -1,28 +1,19 @@
 .gift-ideas {
-  max-width: 150rem;
+  display: flex;
+  max-width: 100%;
   background-color: $color-background-grey;
   margin: 0 auto;
+  flex-direction: column;
 
-  grid-row: center-start / center-end;
-
-  padding: 15rem 15rem;
-
-  margin: 1 10 0 15rem;
-
-  @supports (display: grid) {
-    display: grid;
-    //grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(auto-fit, minmax(25rem, 1fr));
-    grid-gap: 6rem;
-    align-items: start;
-  }
+  padding: 1rem 15rem 7rem;
 
   &__header {
     margin-top: 10rem;
-    margin-bottom: 0;
+    margin-bottom: 3rem;
     font-size: $heading-font-size;
     color: $color-primary;
     text-align: center;
+    padding: 3rem;
   }
 
   &__box {

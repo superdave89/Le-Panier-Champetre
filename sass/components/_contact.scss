@@ -29,6 +29,10 @@
       border: 1rem solid $color-primary;
       width: 100%;
       transform: scale(0.8);
+
+      @include respond(tab-port) {
+        margin: 2rem auto 0;
+      }
     }
   }
   &__info {
@@ -39,16 +43,26 @@
     font-size: $default-font-size;
     text-align: left;
     line-height: 3.5rem;
-    list-style: none;
     transform: translateY(4.5rem);
     font-family: sans-serif;
 
+    ul {
+      list-style: none;
+    }
+
+    span {
+      color: $color-primary;
+      text-decoration: underline;
+    }
+
     @include respond(tab-port) {
-      width: 100%;
+      width: 80%;
       top: 20rem;
-      right: 0%;
       font-size: $sub-heading-font-size;
       line-height: 4rem;
+      text-align: center;
+      padding: 1rem;
+      margin-bottom: 1rem;
     }
 
     @include respond(phone) {
@@ -77,6 +91,25 @@
     }
 
     &--address {
+    }
+
+    &--icon {
+      color: $color-primary;
+      font-size: 4rem;
+      padding: 1rem;
+    }
+
+    &--facebook {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      color: $color-primary;
+      line-height: 1.5rem;
+      align-content: center;
+
+      p {
+        align-self: center;
+      }
     }
   }
 }

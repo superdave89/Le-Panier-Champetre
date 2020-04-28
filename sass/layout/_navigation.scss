@@ -73,6 +73,11 @@ nav a {
   text-transform: uppercase;
   opacity: 0;
   transition: opacity 150ms ease-in-out;
+
+  @include respond(phone) {
+    font-size: 3rem;
+    padding-top: 2rem;
+  }
 }
 
 nav a:hover {
@@ -99,6 +104,7 @@ nav a:hover {
   }
 
   .logo {
+    color: $color-secondary;
     grid-column: 2 / 3;
   }
 

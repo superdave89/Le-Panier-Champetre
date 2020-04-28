@@ -55,7 +55,7 @@ header {
   z-index: 999;
   width: 100%;
   margin: -3rem -3rem;
-  border-bottom: 2px solid #fffeb8; }
+  border-bottom: 2px solid #ffffff; }
 
 body {
   font-family: "Libre Caslon Text", sans-serif;
@@ -257,10 +257,15 @@ form {
     color: #a03232;
     width: 100%;
     font-family: sans-serif; }
+    @media only screen and (max-width: 56.25em) {
+      .pitch__paragraph {
+        width: 70%;
+        margin: 1rem auto; } }
 
-.basket {
-  flex-direction: column;
-  justify-content: center;
+.parallax {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   align-content: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -268,33 +273,36 @@ form {
   background-image: linear-gradient(to right bottom, rgba(255, 254, 184, 0.8), rgba(230, 192, 115, 0.8)), url("../../img/Interior-1.jpeg");
   margin-bottom: 0; }
   @media only screen and (max-width: 56.25em) {
-    .basket {
+    .parallax {
       min-width: 90vw; } }
-  .basket--bg-fixed {
+  .parallax--bg-fixed {
     min-height: 100vh;
     background-attachment: fixed; }
-  .basket__info {
+  .parallax__info {
+    display: flex;
+    flex-direction: column;
     padding: 3rem;
     text-align: center;
     margin: 10rem auto;
-    color: #a03232; }
-  .basket__heading {
+    color: #a03232;
+    width: 40%; }
+  .parallax__heading {
     font-size: 6.4rem; }
-  .basket__content {
+    @media only screen and (max-width: 56.25em) {
+      .parallax__heading {
+        margin: 5rem 2rem; } }
+  .parallax__content {
     font-family: sans-serif; }
-  .basket__pictures {
-    margin-top: 10rem; }
-  .basket__btn {
-    width: 20rem; }
-    @media only screen and (max-width: 37.5em) {
-      .basket__btn {
-        width: 100%; } }
+  .parallax__pictures {
+    margin-top: 1rem; }
+  .parallax__btn {
+    width: 100%; }
 
 .composition {
   position: relative;
-  max-width: 90vw; }
+  max-width: 50%; }
   .composition__photo {
-    max-width: 55%;
+    max-width: 30%;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
     border-radius: 2px;
     position: absolute;
@@ -342,24 +350,19 @@ form {
     transform: scale(0.95); }
 
 .gift-ideas {
-  max-width: 150rem;
+  display: flex;
+  max-width: 100%;
   background-color: #f5f5f5;
   margin: 0 auto;
-  grid-row: center-start / center-end;
-  padding: 15rem 15rem;
-  margin: 1 10 0 15rem; }
-  @supports (display: grid) {
-    .gift-ideas {
-      display: grid;
-      grid-template-rows: repeat(auto-fit, minmax(25rem, 1fr));
-      grid-gap: 6rem;
-      align-items: start; } }
+  flex-direction: column;
+  padding: 1rem 15rem 7rem; }
   .gift-ideas__header {
     margin-top: 10rem;
-    margin-bottom: 0;
+    margin-bottom: 3rem;
     font-size: 6.4rem;
     color: #a03232;
-    text-align: center; }
+    text-align: center;
+    padding: 3rem; }
   .gift-ideas__box {
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -434,6 +437,9 @@ form {
       border: 1rem solid #a03232;
       width: 100%;
       transform: scale(0.8); }
+      @media only screen and (max-width: 56.25em) {
+        .contact__image--map {
+          margin: 2rem auto 0; } }
   .contact__info {
     width: 20%;
     position: absolute;
@@ -442,16 +448,22 @@ form {
     font-size: 1.6rem;
     text-align: left;
     line-height: 3.5rem;
-    list-style: none;
     transform: translateY(4.5rem);
     font-family: sans-serif; }
+    .contact__info ul {
+      list-style: none; }
+    .contact__info span {
+      color: #a03232;
+      text-decoration: underline; }
     @media only screen and (max-width: 56.25em) {
       .contact__info {
-        width: 100%;
+        width: 80%;
         top: 20rem;
-        right: 0%;
         font-size: 3.2rem;
-        line-height: 4rem; } }
+        line-height: 4rem;
+        text-align: center;
+        padding: 1rem;
+        margin-bottom: 1rem; } }
     @media only screen and (max-width: 37.5em) {
       .contact__info {
         margin-top: 2rem;
@@ -463,6 +475,19 @@ form {
     .contact__info--hours {
       list-style: none;
       padding: 1rem 0; }
+    .contact__info--icon {
+      color: #a03232;
+      font-size: 4rem;
+      padding: 1rem; }
+    .contact__info--facebook {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      color: #a03232;
+      line-height: 1.5rem;
+      align-content: center; }
+      .contact__info--facebook p {
+        align-self: center; }
 
 .about {
   margin-top: 4rem;
@@ -613,30 +638,115 @@ form {
 .gift_baskets {
   display: flex;
   flex-direction: column;
-  background-color: #a03232;
-  justify-content: center;
-  height: 100vh; }
+  background-image: linear-gradient(to right, #a03232, #c86f5e);
+  justify-content: center; }
   .gift_baskets__heading {
     font-size: 6.4rem;
     color: #fffeb8;
-    text-align: center; }
+    text-align: center;
+    padding: 5rem; }
   .gift_baskets__paragraph {
     text-align: center;
     color: #fffeb8;
-    font-size: 1.6rem; }
+    font-size: 3.2rem;
+    font-family: sans-serif;
+    font-weight: 200;
+    margin: auto 0;
+    width: 100%;
+    padding: 7rem 5rem; }
   .gift_baskets__cards {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: #fffeb8; }
+    margin: 1rem; }
+    @media only screen and (max-width: 56.25em) {
+      .gift_baskets__cards {
+        flex-direction: row;
+        flex-wrap: wrap; } }
+    @media only screen and (max-width: 37.5em) {
+      .gift_baskets__cards {
+        flex-direction: column; } }
   .gift_baskets__card {
-    max-width: 30%; }
+    width: 30%;
+    padding: 1rem;
+    border: 2px solid #fffeb8;
+    border-radius: 10px;
+    margin: 1rem; }
+    @media only screen and (max-width: 56.25em) {
+      .gift_baskets__card {
+        width: 45%;
+        margin: 1rem auto; } }
+    @media only screen and (max-width: 37.5em) {
+      .gift_baskets__card {
+        width: 90%;
+        margin: 1rem auto; } }
+    .gift_baskets__card-title {
+      color: #fffeb8;
+      text-align: center;
+      margin: auto 0;
+      padding-bottom: 1rem;
+      letter-spacing: 0.2rem; }
     .gift_baskets__card-image {
-      width: 100%; }
+      width: 100%;
+      border-radius: 10px; }
     .gift_baskets__card-paragraph {
       width: 100%;
-      color: #a03232;
+      color: #fffeb8;
       text-align: center; }
+    .gift_baskets__card-price {
+      color: #ffffff;
+      text-shadow: 1px 1px #000000;
+      text-align: center;
+      font-size: 2rem;
+      padding-top: 2rem; }
+
+.gallery {
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center; }
+  .gallery__heading {
+    color: #a03232;
+    font-size: 6.4rem;
+    text-align: center;
+    width: 100%;
+    padding: 4rem 2rem; }
+  .gallery__subheading {
+    color: #a03232;
+    font-size: 3.2rem;
+    text-align: center;
+    width: 90%;
+    margin: 2rem auto; }
+  .gallery__box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 80vw;
+    border: 1px solid #424242;
+    border-radius: 10px;
+    margin: 4rem auto;
+    background-color: #e7e7e7; }
+  .gallery__image {
+    height: 25rem;
+    width: 25rem;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem;
+    border: 1px solid #a03232;
+    margin: 2rem;
+    border-radius: 10px;
+    transition: all 0.2s; }
+    @media only screen and (max-width: 37.5em) {
+      .gallery__image {
+        width: 100%; } }
+    .gallery__image:hover {
+      scale: 2; }
+      @media only screen and (max-width: 37.5em) {
+        .gallery__image:hover {
+          scale: 1.2; } }
 
 .footer {
   display: flex;
@@ -663,6 +773,10 @@ form {
       padding: 1rem; }
       .footer__menu--item:hover {
         text-decoration: underline; }
+    .footer__menu a:link,
+    .footer__menu a:visited,
+    .footer__menu a:active {
+      color: #fffeb8; }
   .footer__break {
     border: 1px solid #fffeb8;
     transform: rotate(90deg);
@@ -777,6 +891,10 @@ nav a {
   text-transform: uppercase;
   opacity: 0;
   transition: opacity 150ms ease-in-out; }
+  @media only screen and (max-width: 37.5em) {
+    nav a {
+      font-size: 3rem;
+      padding-top: 2rem; } }
 
 nav a:hover {
   color: #fffeb8; }
@@ -795,6 +913,7 @@ nav a:hover {
     display: grid;
     grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr; }
   .logo {
+    color: #fffeb8;
     grid-column: 2 / 3; }
   nav {
     /* Edge support */
