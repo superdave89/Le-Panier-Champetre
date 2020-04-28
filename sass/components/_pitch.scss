@@ -53,8 +53,8 @@
     font-family: sans-serif;
 
     @include respond(tab-port) {
-      width: 70%;
       margin: 1rem auto;
+      font-size: $sub-heading-font-size;
     }
   }
 }

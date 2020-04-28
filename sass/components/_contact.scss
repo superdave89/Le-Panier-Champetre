@@ -1,4 +1,8 @@
 .contact {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
   height: 100vh;
   background-image: linear-gradient(
     to right bottom,
@@ -7,22 +11,30 @@
   );
   background-size: cover;
   background-position: top;
-  position: relative;
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-bottom: 5rem;
+    margin-bottom: 5rem;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+  }
 
   &__heading {
+    width: 100%;
     text-align: center;
     font-size: $heading-font-size;
     color: $color-primary;
-    padding-top: 5rem;
+    margin: 1rem auto;
   }
   &__image {
-    position: absolute;
-    top: 20rem;
-    right: 25%;
-
+    width: 50%;
     @include respond(tab-port) {
-      top: 40rem;
-      right: 0%;
+      width: 100%;
     }
 
     &--map {
@@ -36,10 +48,12 @@
     }
   }
   &__info {
-    width: 20%;
-    position: absolute;
-    top: 25rem;
-    right: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding: 2rem;
+    margin: 2rem auto;
     font-size: $default-font-size;
     text-align: left;
     line-height: 3.5rem;
@@ -57,7 +71,7 @@
 
     @include respond(tab-port) {
       width: 80%;
-      top: 20rem;
+
       font-size: $sub-heading-font-size;
       line-height: 4rem;
       text-align: center;
@@ -66,9 +80,9 @@
     }
 
     @include respond(phone) {
+      width: 100%;
       margin-top: 2rem;
-      top: 10rem;
-      right: auto;
+
       font-size: $default-font-size;
       padding: 1rem;
       text-align: center;
@@ -106,6 +120,8 @@
       color: $color-primary;
       line-height: 1.5rem;
       align-content: center;
+      margin: 0 auto;
+      padding: 1rem 5rem;
 
       p {
         align-self: center;

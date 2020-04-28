@@ -1,7 +1,7 @@
 .parallax {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: center;
   align-content: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -30,7 +30,11 @@
     text-align: center;
     margin: 10rem auto;
     color: $color-primary;
-    width: 40%;
+    width: 60%;
+
+    @include respond(phone) {
+      width: 100%;
+    }
   }
 
   &__heading {
@@ -43,6 +47,10 @@
 
   &__content {
     font-family: sans-serif;
+
+    @include respond(tab-port) {
+      font-size: $sub-heading-font-size;
+    }
   }
 
   &__pictures {
