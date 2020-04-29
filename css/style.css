@@ -954,7 +954,7 @@ nav a:hover {
   nav ul {
     display: flex; }
   nav li {
-    margin-left: 2rem;
+    margin-left: 3rem;
     margin-bottom: 0; }
   nav a {
     opacity: 1;

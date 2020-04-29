@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://kit.fontawesome.com/1e10c1b274.js" crossorigin="anonymous"></script>
+    
+    <link
+      href="https://fonts.googleapis.com/css?family=Libre+Caslon+Text:400,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Le Panier</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="logo">Le Panier Champ&#234tre</h1>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <nav>
+        <ul>
+          <li><a href="/home-french.html#home">Accueil</a></li>
+          <li><a href="/home-french.html#about">A Propos de Nous</a></li>
+          <li><a href="/home-french.html#gift-baskets">Paniers</a></li>
+          <li><a href="/gallery.html">Galerie</a></li>
+          <li><a href="/home-french.html#gift-ideas">Id&#233es de Cadeux</a></li>
+          <li><a href="/home-french.html#contact">Contacter</a></li>
+          <li><a href="index.html">Anglais</a></li>
+        </ul>
+      </nav>
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+      </label>
+    </header>
+    <a name="home"></a>
+    <div class="notice">
+      <p class="notice__content--eng">
+        <strong>ATTENTION!</strong>
+        <br/>
+        In accordance with the regulations set by Premier Legault on March 23rd 2020, we are now closed to in-store business.
+        If you would like to make a order, we will deliver for FREE in the Town of Brome Lake. Or we can mail or arrange for a pick up of your order.
+        Contact us by email at lepanier@bellnet.ca or call us 450-242-2758.
+        We wish everyone well in our community and beyond and hope to welcome you back into the store soon.
+        In the meantime keep an eye on our Facebook page for special deals! 
+          </p><hr class="notice__line"/>
+        <p class="notice__content--frn">
+          
+          <strong>ATTENTION!</strong>
+          <br/>Conformément à la réglementation établie par Premier Legault le 23 mars 2020, nous sommes désormais fermés aux commerces en magasin. 
+          Si vous souhaitez passer une commande, nous vous livrerons GRATUITEMENT dans la ville de Lac Brome. 
+          Ou nous pouvons envoyer un courriel ou organiser un ramassage de votre commande. 
+          Contactez-nous par courriel à lepanier@bellnet.ca ou appelez-nous au 450-242-2758. 
+          Nous souhaitons bonne chance à tout le monde dans notre communauté et au-delà et espérons vous revoir bientôt dans le magasin. 
+          En attendant, gardez un œil sur notre page Facebook pour les offres spéciales!</p>
+    </div>
+    
+    <div class="hero">
+      
+      <h1 class="hero__header">Le Panier Champ&#234tre</h1>
+      <hr class="hero__break" />
+      <h3 class="hero__sub">
+        Offrir des cadeaux en toute simplicit&#233</h3>
+      <form class="hero__button" method="get" action="#gift-ideas">
+        <button class="btn" type="submit">Gift Ideas</button>
+    </form>
+    </div>
+    <div class="pitch">
+      <img src="img/Hero.jpeg" alt="hero" class="pitch__img" />
+      <div class="pitch__content"><h2 class="pitch__header">&#201l&#233gant et abordable</h2>
+      <p class="pitch__paragraph">
+            Nous organisons et assemblons &#224 la main des paniers-cadeaux de qualit&#233. Chaque panier est con&#231u selon vos sp&#233cifications. Nous travaillons avec vous pour vous rendre heureux. Id&#233al pour toute occasion!
+      </p></div>
+      
+    </div>
+
+    <section class="parallax parallax--bg-fixed">
+      <div class="parallax__info">
+        <h3 class="parallax__heading">
+            Tu vas tomber amoureux de nos paniers!        </h3>
+        <p class="parallax__content">
+            Tous nos paniers sont assembl&#233s avec soin et diligence. Personnaliser
+            le contenu de votre panier pour refl&#233ter l'occasion ou la saison! Tout
+            tailles et prix disponibles!
+        </p>
+
+        <a href="#gift-baskets" class="parallax__button"><button class="btn parallax__btn">Apprendre encore plus &rarr;</button></a>
+        
+      </div>
+    </section>
+    <section class="gift-ideas" id="gift-ideas"> 
+      <a name="gift-ideas"></a>
+      <h3 class="gift-ideas__header">Parcourez nos id&#233es cadeaux</h3>
+      <section class="gift-ideas__box">
+        <div class="gift-idea">
+          <i class="fas fa-palette gift-idea__icon"></i>
+          <a href="#popup__local-art"><h4 class="gift-idea__heading">Art Local</h4></a>
+          <p class="gift-idea__text">
+            
+                Admirez la culture locale avec l'art d'artistes locaux. D&#233couvrez la campagne.
+          </p>
+        
+        </div>
+        
+        <div class="gift-idea">
+          <i class="fas fa-cheese gift-idea__icon"></i>
+          <a href="#popup__gourmet-foods"><h4 class="gift-idea__heading">Aliments Gourmet</h4></a>
+          <p class="gift-idea__text">
+            Offrez-vous ou offrez aux autres des aliments gastronomiques, notamment des confitures, des &#233pices et des collations.
+          </p>
+        </div>
+        <div class="gift-idea">
+          <i class="fas fa-hand-holding-water gift-idea__icon"></i>
+          <a href="#popup__bath-and-oils"><h4 class="gift-idea__heading">Bain et Huiles</h4></a>
+          <p class="gift-idea__text">
+            Notre s&#233lection de savons et huiles de bain vous aidera &#224 vous détendre.    
+          </p>
+        </div>
+        <div class="gift-idea">
+          <i class="fas fa-calendar-alt gift-idea__icon"></i>
+          <a href="#popup__seasonal"><h4 class="gift-idea__heading">Saisonnier</h4></a>
+          <p class="gift-idea__text">
+            Gardez un œil sur nos stocks saisonniers changeants. Des cadeaux parfaits &#224 tout moment de l'ann&#233e.
+          </p>
+        </div>
+        <div class="gift-idea">
+          <i class="fas fa-gifts gift-idea__icon"></i>
+          <a href="#popup__one-of-a-kind"><h4 class="gift-idea__heading">Articles Uniques</h4></a>
+          <p class="gift-idea__text">
+
+Parcourez notre collection d'articles uniques. Bricolages et cadeaux uniques.
+          </p>
+        </div>
+        <div class="gift-idea">
+          <i class="far fa-gem gift-idea__icon"></i>
+          <a href="#popup__jewelry"><h4 class="gift-idea__heading">Bijoux Faits &#224 la Main</h4></a>
+          <p class="gift-idea__text">
+            Beaux bijoux enti&#232rement r&#233alis&#233s &#224 la main.
+          </p>
+        </div>
+        <!-- <div class="gift-idea">
+          <i class="fas fa-holly-berry gift-idea__icon"></i>
+          <a href="#popup__christmas"><h4 class="gift-idea__heading">Christmas</h4></a>
+          <p class="gift-idea__text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+            distinctio necessitatibus pariatur voluptatibus.
+          </p>
+        </div> -->
+        <div class="gift-idea">
+          <i class="fas fa-child gift-idea__icon"></i>
+          <a href="#popup__kids-corner"><h4 class="gift-idea__heading">
+            Coin des Enfants</h4></a>
+          <p class="gift-idea__text">
+            Amenez les enfants &#224 voir notre coin pour enfants color&#233!</p>
+        </div>
+        <div class="gift-idea">
+          <i class="fas fa-cookie-bite gift-idea__icon"></i>
+          <a href="#popup__fudge-candy"><h4 class="gift-idea__heading">Fudge et Bonbons</h4></a>
+          <p class="gift-idea__text">
+            Arr&#234tez-vous pour un morceau de fudge gratuit et parcourez nos autres sucreries et friandises.
+          </p>
+        </div>
+      </section>
+    </section>
+    <section class="gift_baskets">
+      <a name="gift-baskets"></a>
+      <h2 class="gift_baskets__heading">
+          Paneir Cadeux
+      </h2>        
+      <p class="gift_baskets__paragraph">
+        Parcourez nos options de paniers-cadeaux. Nous avons une s&#233lection pour tous les budgets et toutes les occasions!</p>
+
+      <div class="gift_baskets__cards">  
+
+        
+        <div class="gift_baskets__card">
+          <h3 class="gift_baskets__card-title">Basket</h3>
+          <img class="gift_baskets__card-image" src="./img/GiftBasket-2.jpeg"/>
+          <p class="gift_baskets__card-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, veniam nulla amet enim nam autem.</p>
+          <p class="gift_baskets__card-price">$35-45</p>
+        </div>
+        <div class="gift_baskets__card">
+          <h3 class="gift_baskets__card-title">Basket</h3>
+          <img class="gift_baskets__card-image"src="./img/GiftBasket-3.jpeg"/>
+          <p class="gift_baskets__card-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, veniam nulla amet enim nam autem.</p>
+          <p class="gift_baskets__card-price">$35-45</p>
+        </div>
+        <div class="gift_baskets__card">
+          <h3 class="gift_baskets__card-title">Basket</h3>
+          <img class="gift_baskets__card-image" src="./img/GiftBasket4.jpeg"/>
+          <p class="gift_baskets__card-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, veniam nulla amet enim nam autem.</p>
+          <p class="gift_baskets__card-price">$35-45</p>
+        </div>
+        <div class="gift_baskets__card">
+          <h3 class="gift_baskets__card-title">Basket</h3>
+          <img class="gift_baskets__card-image"src="./img/GiftBasket7.jpeg"/>
+          <p class="gift_baskets__card-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, veniam nulla amet enim nam autem.</p>
+          <p class="gift_baskets__card-price">$35-45</p>
+        </div>
+        <div class="gift_baskets__card">
+          <h3 class="gift_baskets__card-title">Basket</h3>
+          <img class="gift_baskets__card-image"src="./img/GiftBasket6.jpeg"/>
+          <p class="gift_baskets__card-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, veniam nulla amet enim nam autem.</p>
+          <p class="gift_baskets__card-price">$35-45</p>
+        </div>
+      </div>
+    </section>
+    
+    <section class="contact">
+      <a name="contact"></a>
+      <h4 class="contact__heading">Contacter Nous!</h4>
+<div class="contact__content"> <a
+  href="https://www.google.com/maps/place/The+Country+Basket/@45.2161924,-72.5131826,17z/data=!3m1!4b1!4m5!3m4!1s0x4cb6216b022fb2a1:0xc9567825006e6bcd!8m2!3d45.2161886!4d-72.5109939"
+  class="contact__image"
+>
+  <img src="img/GoogleMap.png" class="contact__image--map" />
+</a>
+<div class="contact__info">
+  <ul>
+  <li class="contact__info--phone"><span>T&#233l&#232phone:</span> 450-242-2758</li>
+  <li class="contact__info--email"><span>Email:</span> lepanier@bellnet.ca</li>
+  <!-- <ul class="contact__info--hours">
+    <li class="contact__info--hours-2">Jun-Dec: 10 am - 6 pm</li>
+    <li class="contact__info--hours-3">Jan - May: 10 am - 5pm</li>
+  </ul> -->
+  <li class="contact__info--hours">
+    En raison de COVID-19, notre boutique de cadeaux est ferm&#233e au public jusqu'&#224 nouvel ordre. Cependant, nous prenons toujours les commandes du lundi au vendredi de 10h00 &#224 14h00. Nous pouvons organiser le ramassage du trottoir ou la livraison locale.</li>
+  </li>
+</ul>
+<a class="contact__info--facebook" href="https://www.facebook.com/LePanierChampetre"><i class="fab fa-facebook-square contact__info--icon"></i><p>
+    Visitez-nous sur facebook pour voir nos offres mensuelles!</p></a></div>
+     
+    </div>
+      
+      
+    </section>
+
+    <section class="about">
+      <a name="about"></a>
+      <h3 class="about__heading">A Propos de Nous</h3>
+      <img src="img/Patti_Annette.jpeg" alt="Anette & Patti" class="about__image"/>
+      <p class="about__content">Le Panier Champ&#234tre est d&#233tenue et exploit&#233e par Annette Blanco et Patti Larose-Mason. Nous sommes passionn&#233s d'apporter la joie d'offrir des cadeaux &#224 nos clients. Depuis 2004, Le Panier Champ&#234tre cr&#233e des paniers-cadeaux personnalis&#233s pour les occasions d'affaires et personnelles. Con&#231u dans un style classique, chaque panier-cadeau est soigneusement assembl&#233 en pr&#234tant attention &#224 chaque d&#233tail. La s&#233lection et la pr&#233sentation des produits sont pour nous une priorit&#233 dans la cr&#233ation d'un panier-cadeau qui vous convient. </p>
+    </section>
+
+    <footer class="footer">
+      <ul class="footer__menu">
+        <li class="footer__menu--item"><a href="/" target="home">Accueil</a></li>
+        <li class="footer__menu--item"><a href="#about" target="about">A Porpos de Nous</a></li>
+        <li class="footer__menu--item"><a href="#gift-baskets" target="gift-baskets">Paniers</a></li>
+        <li class="footer__menu--item"><a href="gallery.html" target="gallery">Galerie</a></li>
+        <li class="footer__menu--item"><a href="#gift-ideas" target="gift-ideas">Idees Cadeux</a></li>
+        <li class="footer__menu--item"><a href="#contact" target="contact">Contacter</a></li>
+        <li class="footer__menu--item--lang"><a href="home-french.html" target="contact">Anglias</a></li>
+      </ul>
+
+      <p class="footer__content">Copyright &copy;2020 Le Panier Champetre. All rights reserved. Website desgined by David Mason.</p>
+      
+    </footer>
+    <div class="popup" id="popup__local-art">
+          <div class="popup__content">
+              <a href="#gift-ideas" class="popup__close">&times;</a>
+              <h2 class="popup__header">Local Art</h2>
+                <p class="popup__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum suscipit, quasi illo accusamus maxime alias qui molestias excepturi doloribus assumenda earum ratione, reprehenderit dolor minima dolorum nesciunt quia hic, exercitationem et expedita?</p>
+                <section class="popup__images">
+                  <img src="img/LocalArt-1.jpeg" alt="Local Art 1" class="popup__image"/>
+                  <img src="img/LocalArt-2.jpeg" alt="Local Art 2" class="popup__image"/>
+                  <img src="img/LocalArt-3.jpeg" alt="Local Art 3" class="popup__image"/>
+                  <img src="img/LocalArt-4.jpeg" alt="Local Art 4" class="popup__image"/>
+                  <img src="img/LocalArt-5.jpeg" alt="Local Art 5" class="popup__image"/>
+                  <img src="img/LocalArt-7.jpeg" alt="Local Art 6" class="popup__image"/>
+                </section>
+              </div>
+          </div>
+      </div>
+      <div class="popup" id="popup__gourmet-foods">
+        <div class="popup__content">
+            <a href="#gift-ideas" class="popup__close">&times;</a>
+            <h2 class="popup__header">Gourmet Foods</h2>
+              <p class="popup__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum suscipit, quasi illo accusamus maxime alias qui molestias excepturi doloribus assumenda earum ratione, reprehenderit dolor minima dolorum nesciunt quia hic, exercitationem et expedita?</p>
+              <section class="popup__images">
+                <img src="img/GourmetFoods-1.jpeg" alt="Gourmet Foods 1" class="popup__image"/>
+                <img src="img/GourmetFoods-2.jpeg" alt="Gourmet Foods 1" class="popup__image"/>
+                <img src="img/GourmetFoods-3.jpeg" alt="Gourmet Foods 1" class="popup__image"/>
+                <img src="img/GourmetFoods-4.jpeg" alt="Gourmet Foods 1" class="popup__image"/>
+              </section>
+            </div>
+        </div>
+    </div><div class="popup" id="popup__bath-and-oils">
+      <div class="popup__content">
+          <a href="#gift-ideas" class="popup__close">&times;</a>
+          <h2 class="popup__header">Bath and Oils</h2>
+            <p class="popup__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum suscipit, quasi illo accusamus maxime alias qui molestias excepturi doloribus assumenda earum ratione, reprehenderit dolor minima dolorum nesciunt quia hic, exercitationem et expedita?</p>
+            <section class="popup__images">
+              <img src="img/BandO-1.jpeg" alt="Bath and Oils 1" class="popup__image"/>
+              <img src="img/BandO-2.jpeg" alt="Bath and Oils 2" class="popup__image"/>
+              <img src="img/BandO-3.jpeg" alt="Bath and Oils 3" class="popup__image"/>
+              <img src="img/BandO-4.jpeg" alt="Bath and Oils 4" class="popup__image"/>
+            </section>
+          </div>
+      </div>
+  </div><div class="popup" id="popup__seasonal">
+    <div class="popup__content">
+        <a href="#gift-ideas" class="popup__close">&times;</a>
+        <h2 class="popup__header">Seasonal</h2>
+          <p class="popup__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum suscipit, quasi illo accusamus maxime alias qui molestias excepturi doloribus assumenda earum ratione, reprehenderit dolor minima dolorum nesciunt quia hic, exercitationem et expedita?</p>
+          <section class="popup__images">
+            <img src="img/Seasonal-1.jpeg" alt="Seasonal 1" class="popup__image"/>
+            <img src="img/Seasonal-2.jpeg" alt="Seasonal 2" class="popup__image"/>
+            <img src="img/Seasonal-3.jpeg" alt="Seasonal 3" class="popup__image"/>
+            <img src="img/Seasonal-4.jpeg" alt="Seasonal 4" class="popup__image"/>
+            <img src="img/Seasonal-5.jpeg" alt="Seasonal 5" class="popup__image"/>
+          </section>
+        </div>
+    </div>
+  </div><div class="popup" id="popup__one-of-a-kind">
+  <div class="popup__content">
+      <a href="#gift-ideas" class="popup__close">&times;</a>
+      <h2 class="popup__header">One of a Kind Items</h2>
+        <p class="popup__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum suscipit, quasi illo accusamus maxime alias qui molestias excepturi doloribus assumenda earum ratione, reprehenderit dolor minima dolorum nesciunt quia hic, exercitationem et expedita?</p>
+        <section class="popup__images">
+          <img src="img/OoaK-1.jpeg" alt="OoaK 1" class="popup__image"/>
+          <img src="img/OoaK-2.jpeg" alt="OoaK 2" class="popup__image"/>
+          <img src="img/OoaK-3.jpeg" alt="OoaK 3" class="popup__image"/>
+          <img src="img/OoaK-4.jpeg" alt="OoaK 4" class="popup__image"/>
+          <img src="img/OoaK-5.jpeg" alt="OoaK 5" class="popup__image"/>
+          <img src="img/OoaK-6.jpeg" alt="OoaK 6" class="popup__image"/>
+        </section>
+      </div>
+  </div>
+  </div><div class="popup" id="popup__jewelry">
+  <div class="popup__content">
+      <a href="#gift-ideas" class="popup__close">&times;</a>
+      <h2 class="popup__header">Hand-made Jewelry</h2>
+        <p class="popup__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum suscipit, quasi illo accusamus maxime alias qui molestias excepturi doloribus assumenda earum ratione, reprehenderit dolor minima dolorum nesciunt quia hic, exercitationem et expedita?</p>
+        <section class="popup__images">
+          <img src="img/HCJ-1.jpeg" alt="Local Art 1" class="popup__image"/>
+          <img src="img/HCJ-2.jpeg" alt="Local Art 2" class="popup__image"/>
+          <img src="img/HCJ-3.jpeg" alt="Local Art 3" class="popup__image"/>
+          <img src="img/HCJ-4.jpeg" alt="Local Art 4" class="popup__image"/>
+          <img src="img/HCJ-5.jpeg" alt="Local Art 5" class="popup__image"/>
+          <img src="img/HCJ-6.jpeg" alt="Local Art 6" class="popup__image"/>
+        </section>
+      </div>
+  </div>
+  </div><div class="popup" id="popup__christmas">
+  <div class="popup__content">
+      <a href="#gift-ideas" class="popup__close">&times;</a>
+      <h2 class="popup__header">Christmas</h2>
+        <p class="popup__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum suscipit, quasi illo accusamus maxime alias qui molestias excepturi doloribus assumenda earum ratione, reprehenderit dolor minima dolorum nesciunt quia hic, exercitationem et expedita?</p>
+        <section class="popup__images">
+          <img src="img/China-1.jpeg" alt="Local Art 1" class="popup__image"/>
+        </section>
+      </div>
+  </div>
+  </div><div class="popup" id="popup__kids-corner">
+  <div class="popup__content">
+      <a href="#gift-ideas" class="popup__close">&times;</a>
+      <h2 class="popup__header">Kid's Corner</h2>
+        <p class="popup__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum suscipit, quasi illo accusamus maxime alias qui molestias excepturi doloribus assumenda earum ratione, reprehenderit dolor minima dolorum nesciunt quia hic, exercitationem et expedita?</p>
+        <section class="popup__images">
+          <img src="img/KidsCorner-1.jpeg" alt="Kid's Corner 1" class="popup__image"/>
+          <img src="img/KidsCorner-2.jpeg" alt="Kid's Corner 2" class="popup__image"/>
+          <img src="img/KidsCorner-3.jpeg" alt="Kid's Corner 3" class="popup__image"/>
+          <img src="img/KidsCorner-4.jpeg" alt="Kid's Corner 4" class="popup__image"/>
+        </section>
+      </div>
+  </div>
+  </div><div class="popup" id="popup__fudge-candy">
+  <div class="popup__content">
+      <a href="#gift-ideas" class="popup__close">&times;</a>
+      <h2 class="popup__header">Fudge and Candy</h2>
+        <p class="popup__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum suscipit, quasi illo accusamus maxime alias qui molestias excepturi doloribus assumenda earum ratione, reprehenderit dolor minima dolorum nesciunt quia hic, exercitationem et expedita?</p>
+        <section class="popup__images">
+          <img src="img/Fudge-1.jpeg" alt="Fudge 1" class="popup__image"/>
+          <img src="img/Fudge-2.jpeg" alt="Fudge 2" class="popup__image"/>
+        </section>
+      </div>
+  </div>
+</div>
+
+  </body>
+</html>
