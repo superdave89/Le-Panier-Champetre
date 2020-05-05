@@ -34,15 +34,15 @@
   }
 
   &__image {
-    height: 25rem;
-    width: 25rem;
+    height: 35rem;
+    width: 35rem;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 2rem;
+    padding: 1rem;
     border: 1px solid $color-primary;
-    margin: 2rem;
-    border-radius: 10px;
+    margin: 1rem;
+    border-radius: 5px;
     transition: all 0.2s;
 
     @include respond(phone) {

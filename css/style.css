@@ -390,7 +390,8 @@ form {
   display: grid;
   grid-row-gap: 1.5rem;
   grid-column-gap: 2.5rem;
-  padding: 2rem; }
+  padding: 2rem;
+  cursor: default; }
   @supports (display: grid) {
     .gift-idea,
     .gift-idea a {
@@ -406,22 +407,22 @@ form {
     font-size: 7.5rem;
     grid-row: 1 / span 1;
     transform: translateY(-1rem);
-    margin: 0 auto; }
+    margin: 0 auto;
+    cursor: default; }
   .gift-idea__text,
   .gift-idea a__text {
     font-size: 1.5rem;
     text-align: center;
     color: #a03232;
     text-decoration: none;
-    font-family: sans-serif; }
+    font-family: sans-serif;
+    cursor: default; }
   .gift-idea__heading,
   .gift-idea a__heading {
     color: #a03232;
     font-size: 3.2rem;
     text-align: center;
-    padding: 0.5rem; }
-  .gift-idea:hover,
-  .gift-idea a:hover {
+    padding: 0.5rem;
     cursor: pointer; }
 
 .contact {
@@ -557,7 +558,7 @@ form {
   z-index: 9999;
   opacity: 0;
   visibility: hidden;
-  transition: all 0.3s; }
+  transition: all 0.1s; }
   @supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
     .popup {
       -webkit-backdrop-filter: blur(10px);
@@ -751,15 +752,15 @@ form {
     margin: 4rem auto;
     background-color: #e7e7e7; }
   .gallery__image {
-    height: 25rem;
-    width: 25rem;
+    height: 35rem;
+    width: 35rem;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 2rem;
+    padding: 1rem;
     border: 1px solid #a03232;
-    margin: 2rem;
-    border-radius: 10px;
+    margin: 1rem;
+    border-radius: 5px;
     transition: all 0.2s; }
     @media only screen and (max-width: 37.5em) {
       .gallery__image {

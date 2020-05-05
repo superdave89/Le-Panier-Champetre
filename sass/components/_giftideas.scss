@@ -37,6 +37,7 @@
   grid-row-gap: 1.5rem;
   grid-column-gap: 2.5rem;
   padding: 2rem;
+  cursor: default;
 
   @supports (display: grid) {
     width: auto;
@@ -53,6 +54,7 @@
     grid-row: 1 / span 1;
     transform: translateY(-1rem);
     margin: 0 auto;
+    cursor: default;
   }
 
   &__text {
@@ -61,6 +63,7 @@
     color: $color-primary;
     text-decoration: none;
     font-family: sans-serif;
+    cursor: default;
   }
 
   &__heading {
@@ -68,9 +71,10 @@
     font-size: $sub-heading-font-size;
     text-align: center;
     padding: 0.5rem;
-  }
-
-  &:hover {
     cursor: pointer;
   }
+
+  // &:hover {
+  //   cursor: pointer;
+  // }
 }
