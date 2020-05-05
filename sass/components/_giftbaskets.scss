@@ -75,6 +75,10 @@
       width: 100%;
       color: $color-secondary;
       text-align: center;
+
+      @include respond(phone) {
+        font-size: 2rem;
+      }
     }
 
     &-price {

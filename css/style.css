@@ -39,7 +39,8 @@ html {
 
 body {
   box-sizing: border-box;
-  padding: 3rem; }
+  padding: 3rem;
+  margin: auto; }
   @media only screen and (max-width: 56.25em) {
     body {
       padding: 0; } }
@@ -245,8 +246,8 @@ form {
     margin: 2rem; }
     @media only screen and (max-width: 37.5em) {
       .pitch__img {
-        scale: 2;
-        padding: 0.5rem; } }
+        padding: 0.5rem;
+        -webkit-transform: scale(2); } }
   .pitch__header {
     margin: auto 2rem;
     color: #a03232;
@@ -279,6 +280,9 @@ form {
   @media only screen and (max-width: 56.25em) {
     .parallax {
       min-width: 90vw; } }
+  @media only screen and (max-width: 37.5em) {
+    .parallax {
+      background-image: linear-gradient(to right bottom, rgba(255, 254, 184, 0.8), rgba(230, 192, 115, 0.8)); } }
   .parallax--bg-fixed {
     min-height: 100vh;
     background-attachment: fixed; }
@@ -411,12 +415,16 @@ form {
     cursor: default; }
   .gift-idea__text,
   .gift-idea a__text {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     text-align: center;
     color: #a03232;
     text-decoration: none;
     font-family: sans-serif;
     cursor: default; }
+    @media only screen and (max-width: 37.5em) {
+      .gift-idea__text,
+      .gift-idea a__text {
+        font-size: 2rem; } }
   .gift-idea__heading,
   .gift-idea a__heading {
     color: #a03232;
@@ -716,6 +724,9 @@ form {
       width: 100%;
       color: #fffeb8;
       text-align: center; }
+      @media only screen and (max-width: 37.5em) {
+        .gift_baskets__card-paragraph {
+          font-size: 2rem; } }
     .gift_baskets__card-price {
       color: #ffffff;
       text-shadow: 1px 1px #000000;

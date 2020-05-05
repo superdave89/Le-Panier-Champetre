@@ -58,12 +58,16 @@
   }
 
   &__text {
-    font-size: 1.5rem;
+    font-size: $default-font-size;
     text-align: center;
     color: $color-primary;
     text-decoration: none;
     font-family: sans-serif;
     cursor: default;
+
+    @include respond(phone) {
+      font-size: 2rem;
+    }
   }
 
   &__heading {
