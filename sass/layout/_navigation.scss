@@ -1,158 +1,113 @@
-.nav-toggle {
-  position: absolute !important;
-  top: -9999px !important;
-  left: -9999px !important;
-}
-
-.nav-toggle:focus ~ .nav-toggle-label {
-  outline: 3px solid rgba(lightblue, 0.75);
-}
-
-.nav-toggle-label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-left: 1.5rem;
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.nav-toggle-label span,
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-  display: block;
-  background: white;
-  height: 2px;
-  width: 2em;
-  border-radius: 2px;
-  position: relative;
-}
-
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-  content: "";
-  position: absolute;
-}
-
-.nav-toggle-label span::before {
-  bottom: 7px;
-}
-
-.nav-toggle-label span::after {
-  top: 7px;
-}
-
 nav {
-  position: absolute;
-  text-align: left;
-  top: 100%;
-  left: 0;
-  background: $color-primary;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: $color-primary;
   width: 100%;
-  transform: scale(1, 0);
-  transform-origin: top;
-  transition: transform 400ms ease-in-out;
+  z-index: 100;
+  border-bottom: 2px solid $color-white;
+
+  & a,
+  a:link,
+  a:visited {
+    color: $color-secondary;
+  }
 }
 
-nav ul {
-  margin: 0;
-  padding: 0;
+.logo {
+  color: $color-secondary;
+  letter-spacing: 1px;
+  font-size: 3rem;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+
+.nav-links li {
   list-style: none;
 }
 
-nav li {
-  margin-bottom: 1em;
-  margin-left: 1em;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  opacity: 0;
-  transition: opacity 150ms ease-in-out;
-
-  @include respond(phone) {
-    font-size: 3rem;
-    padding-top: 2rem;
-  }
-}
-
-nav a:hover {
+.nav-links a {
   color: $color-secondary;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 14px;
 }
 
-.nav-toggle:checked ~ nav {
-  transform: scale(1, 1);
+.burger {
+  display: none;
 }
 
-.nav-toggle:checked ~ nav a {
-  opacity: 1;
-  transition: opacity 250ms ease-in-out 250ms;
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: $color-secondary;
+  margin: 5px;
+  transition: all 0.3s ease-in;
 }
 
-@media screen and (min-width: 800px) {
-  .nav-toggle-label {
-    display: none;
-  }
-
-  header {
-    display: grid;
-    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
-  }
-
-  .logo {
-    color: $color-secondary;
-    grid-column: 2 / 3;
-  }
-
-  nav {
-    /* Edge support */
-    position: relative;
-    text-align: left;
-    transition: none;
-    transform: scale(1, 1);
-    background: none;
-    top: initial;
-    left: initial;
-    /* end Edge support stuff */
-
-    grid-column: 3 / 4;
+@media screen and (max-width: 1024px) {
+  .nav-links {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: space-around;
+    width: 60%;
   }
+}
 
-  nav ul {
-    display: flex;
+@media screen and (max-width: 678px) {
+  body {
+    overflow-x: hidden;
   }
-
-  nav li {
-    margin-left: 3rem;
-    margin-bottom: 0;
-  }
-
-  nav a {
-    opacity: 1;
-    position: relative;
-  }
-
-  nav a::before {
-    content: "";
-    display: block;
-    height: 5px;
-    background: $color-secondary;
+  .nav-links {
     position: absolute;
-    top: -0.75em;
-    left: 0;
-    right: 0;
-    transform: scale(0, 1);
-    transition: transform ease-in-out 250ms;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: $color-primary;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
   }
 
-  nav a:hover::before {
-    transform: scale(1, 1);
+  .nav-links li {
+    opacity: 0;
   }
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
 }

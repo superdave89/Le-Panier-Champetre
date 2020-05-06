@@ -2,10 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 minimum-scale=1" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://kit.fontawesome.com/1e10c1b274.js" crossorigin="anonymous"></script>
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link
       href="https://fonts.googleapis.com/css?family=Libre+Caslon+Text:400,700&display=swap"
       rel="stylesheet"
@@ -15,7 +16,33 @@
   </head>
   <body>
     <header>
-      <h1 class="logo">Le Panier Champ&#234tre</h1>
+      <nav>
+      <div class="logo">
+        <h4><a href="/">Le Panier Champ&#234tre</a></h4>
+      </div>
+      <ul class="nav-links">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/gallery.html">Gallery</a></li>
+        <li><a href="#gift-baskets">Baskets</a></li>
+        <li><a href="#gift-ideas">Gift Ideas</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="/home-french.html">Fran&#231ais</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+  </header>
+    
+  
+    
+    <!-- <header> -->
+
+      
+      <!-- <h1 class="logo">Le Panier Champ&#234tre</h1>
       <input type="checkbox" id="nav-toggle" class="nav-toggle">
       <nav>
         <ul>
@@ -30,8 +57,8 @@
       </nav>
       <label for="nav-toggle" class="nav-toggle-label">
         <span></span>
-      </label>
-    </header>
+      </label> -->
+    <!-- </header> -->
     <a name="home"></a>
     <div class="notice">
       <p class="notice__content--eng">
@@ -99,35 +126,35 @@
         
         <div class="gift-idea">
           <i class="fas fa-cheese gift-idea__icon"></i>
-          <a href="#popup__gourmet-foods"><h4 class="gift-idea__heading">Gourmet Foods</h4></a>
+          <a href="/gallery.html#gourmet-food"><h4 class="gift-idea__heading">Gourmet Foods</h4></a>
           <p class="gift-idea__text">
             Treat yourself or others with gourmet foods including jams, spices and snacks.
           </p>
         </div>
         <div class="gift-idea">
           <i class="fas fa-hand-holding-water gift-idea__icon"></i>
-          <a href="#popup__bath-and-oils"><h4 class="gift-idea__heading">Bath and Oils</h4></a>
+          <a href="/gallery.html#bath-and-oil"><h4 class="gift-idea__heading">Bath and Oils</h4></a>
           <p class="gift-idea__text">
             Our selection of bath soaps and oils will help you relax.
           </p>
         </div>
         <div class="gift-idea">
           <i class="fas fa-calendar-alt gift-idea__icon"></i>
-          <a href="#popup__seasonal"><h4 class="gift-idea__heading">Seasonal</h4></a>
+          <a href="/gallery.html#seasonal"><h4 class="gift-idea__heading">Seasonal</h4></a>
           <p class="gift-idea__text">
             Keep an eye on our changing seasonal stock. Perfect gifts for any time of the year.
           </p>
         </div>
         <div class="gift-idea">
           <i class="fas fa-gifts gift-idea__icon"></i>
-          <a href="#popup__one-of-a-kind"><h4 class="gift-idea__heading">One of a Kind Items</h4></a>
+          <a href="/gallery.html#one-of-a-kind"><h4 class="gift-idea__heading">One of a Kind Items</h4></a>
           <p class="gift-idea__text">
             Browse our collection of one of a kind items. Unique knick knacks and gifts. 
           </p>
         </div>
         <div class="gift-idea">
           <i class="far fa-gem gift-idea__icon"></i>
-          <a href="#popup__jewelry"><h4 class="gift-idea__heading">Hand-made Jewelry</h4></a>
+          <a href="/gallery.html#hand-made-jewelry"><h4 class="gift-idea__heading">Hand-made Jewelry</h4></a>
           <p class="gift-idea__text">
             Beautiful jewelry made entirely by hand. 
           </p>
@@ -142,14 +169,14 @@
         </div> -->
         <div class="gift-idea">
           <i class="fas fa-child gift-idea__icon"></i>
-          <a href="#popup__kids-corner"><h4 class="gift-idea__heading">Kid's Corner</h4></a>
+          <a href="/gallery.html#kids-corner"><h4 class="gift-idea__heading">Kid's Corner</h4></a>
           <p class="gift-idea__text">
             Bring the kids to see our colourful kid's corner! 
           </p>
         </div>
         <div class="gift-idea">
           <i class="fas fa-cookie-bite gift-idea__icon"></i>
-          <a href="#popup__fudge-candy"><h4 class="gift-idea__heading">Fudge and Candy</h4></a>
+          <a href="/gallery.html#fudge-and-candy"><h4 class="gift-idea__heading">Fudge and Candy</h4></a>
           <p class="gift-idea__text">
             Stop in for a free piece of fudge and browse our other sweets and treats. 
           </p>
@@ -248,7 +275,7 @@
       <p class="footer__content">Copyright &copy;2020 Le Panier Champetre. All rights reserved. Website desgined by David Mason.</p>
       
     </footer>
-    <div class="popup" id="popup__local-art">
+    <!-- <div class="popup" id="popup__local-art">
           <div class="popup__content">
               <a href="#gift-ideas" class="popup__close">&times;</a>
               <h2 class="popup__header">Local Art</h2>
@@ -368,7 +395,10 @@
         </section>
       </div>
   </div>
-</div>
+</div> -->
 
   </body>
+  
 </html>
+
+<script src="app.js"></script>
