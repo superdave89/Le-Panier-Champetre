@@ -19,7 +19,7 @@ const navSlide = () => {
       }s`;
       link.addEventListener("click", () => {
         nav.classList.remove("nav-active");
-        burger.classList.toggle("toggle");
+        burger.classList.remove("toggle");
       });
     });
     //burger animation

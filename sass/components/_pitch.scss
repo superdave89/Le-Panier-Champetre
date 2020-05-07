@@ -7,7 +7,7 @@
   padding-bottom: 3rem;
   margin-bottom: 8rem;
 
-  @include respond(tab-port) {
+  @include respond(tab-land) {
     flex-direction: column;
     align-items: center;
   }
