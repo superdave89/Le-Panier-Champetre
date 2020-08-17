@@ -13,32 +13,35 @@
   }
 
   &__image {
+    display: block;
+    margin: 1rem;
     border: 1px solid $color-black;
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+    -webkit-box-shadow: $box-shadow;
+    -moz-box-shadow: $box-shadow;
+    box-shadow: $box-shadow;
     align-self: center;
-    padding: 2rem;
-    width: 50%;
+    width: 80%;
 
-    @include respond(phone) {
-      padding: 0.5rem;
-      scale: 1.5;
+    @include respond(tab-port) {
+      width: 100%;
       margin-bottom: 1.5rem;
+      box-shadow: none;
     }
   }
 
   &__content {
-    padding: 3rem;
+    padding: 5rem;
     align-self: center;
     font-size: 2rem;
     width: 80%;
     text-align: center;
     color: $color-primary;
     font-family: sans-serif;
+    margin: 1rem;
 
-    @include respond(phone) {
-      padding: 5rem;
+    @include respond(tab-port) {
+      width: 100%;
     }
   }
 }

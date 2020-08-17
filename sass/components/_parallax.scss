@@ -55,10 +55,7 @@
 
   &__content {
     font-family: sans-serif;
-
-    @include respond(tab-port) {
-      font-size: $sub-heading-font-size;
-    }
+    font-size: $sub-heading-font-size;
   }
 
   &__pictures {
