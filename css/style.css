@@ -228,14 +228,9 @@ form {
       align-items: center; } }
   .pitch__content {
     display: flex;
-    flex-direction: column;
-    padding: 5rem; }
+    flex-direction: column; }
   .pitch__img {
     max-width: 50%;
-    border: 0.1rem solid #000000;
-    -webkit-box-shadow: 8px 9px 12px -5px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 8px 9px 12px -5px rgba(0, 0, 0, 0.75);
-    box-shadow: 8px 9px 12px -5px rgba(0, 0, 0, 0.75);
     margin: auto 2rem; }
     @media only screen and (max-width: 56.25em) {
       .pitch__img {
@@ -253,10 +248,11 @@ form {
         padding-top: 10rem; } }
   .pitch__paragraph {
     margin: auto 2rem;
-    font-size: 3.2rem;
+    font-size: 1.6rem;
     color: #a03232;
     width: 100%;
-    font-family: sans-serif; }
+    font-family: sans-serif;
+    line-height: 110%; }
     @media only screen and (max-width: 56.25em) {
       .pitch__paragraph {
         margin: 1rem auto;
@@ -359,7 +355,7 @@ form {
 .gift-ideas {
   display: flex;
   max-width: 100%;
-  background-color: #f5f5f5;
+  background-color: #ffffff;
   margin: 0 auto;
   flex-direction: column;
   padding: 1rem 15rem 7rem; }
@@ -372,7 +368,6 @@ form {
     padding: 3rem; }
   .gift-ideas__box {
     display: grid;
-    grid-template-rows: 1fr 1fr;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); }
   @media only screen and (max-width: 37.5em) {
     .gift-ideas {
@@ -432,7 +427,6 @@ form {
   flex-wrap: nowrap;
   justify-content: space-around;
   align-content: center;
-  background-image: linear-gradient(to right bottom, rgba(255, 254, 184, 0.8), rgba(230, 192, 115, 0.8));
   background-size: cover;
   background-position: top; }
   .contact__heading {
@@ -690,16 +684,15 @@ form {
 .gift_baskets {
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(to right, #a03232, #c86f5e);
   justify-content: center; }
   .gift_baskets__heading {
     font-size: 6.4rem;
-    color: #fffeb8;
+    color: #a03232;
     text-align: center;
     padding: 5rem; }
   .gift_baskets__paragraph {
     text-align: center;
-    color: #fffeb8;
+    color: #a03232;
     font-size: 3.2rem;
     font-family: sans-serif;
     font-weight: 200;
@@ -725,11 +718,9 @@ form {
     justify-content: center;
     align-content: space-around;
     width: 40%;
-    border: 2px solid #000000;
     border-radius: 5px;
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     margin: 1rem;
-    background-color: #e7e7e7; }
+    background-color: #ffffff; }
     @media only screen and (max-width: 56.25em) {
       .gift_baskets__card {
         width: 45%;
@@ -894,17 +885,19 @@ nav {
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
-  background-color: #a03232;
+  background-color: white;
   width: 100%;
   z-index: 100;
   border-bottom: 2px solid #ffffff; }
   nav a,
   nav a:link,
   nav a:visited {
-    color: #fffeb8; }
+    color: #a03232; }
+  nav a:hover {
+    text-decoration: underline; }
 
 .logo {
-  color: #fffeb8;
+  color: #a03232;
   letter-spacing: 1px;
   font-size: 3rem; }
 
@@ -917,7 +910,7 @@ nav {
   list-style: none; }
 
 .nav-links a {
-  color: #fffeb8;
+  color: #a03232;
   text-decoration: none;
   font-weight: 700;
   font-size: 1.4rem; }
@@ -928,7 +921,7 @@ nav {
 .burger div {
   width: 25px;
   height: 3px;
-  background-color: #fffeb8;
+  background-color: #a03232;
   margin: 5px;
   transition: all 0.3s ease-in; }
 

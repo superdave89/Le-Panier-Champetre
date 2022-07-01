@@ -15,15 +15,15 @@
   &__content {
     display: flex;
     flex-direction: column;
-    padding: 5rem;
+    // padding: 5rem 0 5rem 0;
   }
 
   &__img {
     max-width: 50%;
-    border: 0.1rem solid $color-black;
-    -webkit-box-shadow: 8px 9px 12px -5px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 8px 9px 12px -5px rgba(0, 0, 0, 0.75);
-    box-shadow: 8px 9px 12px -5px rgba(0, 0, 0, 0.75);
+    // border: 0.1rem solid $color-black;
+    // -webkit-box-shadow: 8px 9px 12px -5px rgba(0, 0, 0, 0.75);
+    // -moz-box-shadow: 8px 9px 12px -5px rgba(0, 0, 0, 0.75);
+    // box-shadow: 8px 9px 12px -5px rgba(0, 0, 0, 0.75);
     margin: auto 2rem;
 
     @include respond(tab-port) {
@@ -49,10 +49,11 @@
   &__paragraph {
     margin: auto 2rem;
     // text-align: center;
-    font-size: $sub-heading-font-size;
+    font-size: $default-font-size;
     color: $color-primary;
     width: 100%;
     font-family: sans-serif;
+    line-height: 110%;
 
     @include respond(tab-port) {
       margin: 1rem auto;

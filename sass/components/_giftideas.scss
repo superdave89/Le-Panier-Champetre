@@ -1,7 +1,7 @@
 .gift-ideas {
   display: flex;
   max-width: 100%;
-  background-color: $color-background-grey;
+  background-color: $color-white;
   margin: 0 auto;
   flex-direction: column;
 
@@ -18,7 +18,7 @@
 
   &__box {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    // grid-template-rows: 1fr 1fr;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   }
 

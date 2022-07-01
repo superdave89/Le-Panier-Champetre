@@ -1,23 +1,23 @@
 .gift_baskets {
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(
-    to right,
-    $color-primary,
-    $color-primary-light
-  );
+  // background-image: linear-gradient(
+  //   to right,
+  //   $color-primary,
+  //   $color-primary-light
+  // );
   justify-content: center;
 
   &__heading {
     font-size: $heading-font-size;
-    color: $color-secondary;
+    color: $color-primary;
     text-align: center;
     padding: 5rem;
   }
 
   &__paragraph {
     text-align: center;
-    color: $color-secondary;
+    color: $color-primary;
     font-size: $sub-heading-font-size;
     font-family: sans-serif;
     font-weight: 200;
@@ -50,11 +50,11 @@
     align-content: space-around;
     width: 40%;
 
-    border: 2px solid $color-black;
+    // border: 2px solid $color-black;
     border-radius: 5px;
-    box-shadow: $box-shadow;
+    // box-shadow: $box-shadow;
     margin: 1rem;
-    background-color: $color-grey-light;
+    background-color: $color-white;
 
     @include respond(tab-port) {
       width: 45%;
